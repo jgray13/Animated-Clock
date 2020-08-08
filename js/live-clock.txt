@@ -1,0 +1,31 @@
+	var msg;    //message displayed to users
+	var today;        //todays date
+	var elMessage;       //the element that shows the message
+	
+function dateAndTime(today) {
+	//declare variables within the function for local scope
+	var day, date, month, year, dayNames, monthNames, hours, minutes, seconds;	
+	//create arrays to hold the names of days/months
+	dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',];
+	monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];	
+	//collect the parts of the date to show on the page
+	day = dayNames[today.getDay()];
+	date = today.getDate();
+	month = monthNames[today.getMonth()];
+	year = today.getFullYear();
+	
+	hours = today.getHours();
+	minutes = today.getMinutes();
+	seconds = today.getSeconds();
+	
+	minutes = ( minutes < 10 ? "0" : "" ) + minutes;
+    seconds = ( seconds < 10 ? "0" : "" ) + seconds;
+
+	//create the message
+	msg = hours + ' ' + ":" + ' ' + minutes + ' ' + ":" + ' ' + seconds + ' <br /> ' + day + ' ' + date + ' ' + month + ' ' + year + '';
+	return msg;
+}
+
+today = new Date();                                  //put today's date in variable
+elMessage = document.getElementById('date-and-time');       //get the element
+elMessage.innerHTML = dateAndTime(today);              //add the message
