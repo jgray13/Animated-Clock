@@ -1,8 +1,8 @@
 # Animated-Clock
 An animated clock made using HTML, CSS and javaSript. 
 
-Set and format the current date and time with javaScript. Display as a clock using CSS for styling. 
+The current date and time is set and formatted with javaScript. This is displayed as a digital clock using CSS for styling. 
 
-Animate the clock so it bounces around the screen with CSS animation. 
+The clock is animated so it bounces around the screen with CSS animation. 
 
-Style the background with CSS using linear gradient.
+The background is styled with CSS using linear gradient.
