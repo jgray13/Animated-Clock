@@ -3,7 +3,7 @@ body {
 	margin: 0 auto;
 }
 h1 {
-	font-size: 30px;
+	font-size: 27px;
 	margin: 30px auto 0;
 	text-align: center;
 }
@@ -11,7 +11,7 @@ h1 {
 	position: absolute;
 	margin: 50px 5% 0;
 	padding: 50px 0;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 	width: 90%;
@@ -159,29 +159,35 @@ h1 {
 */
 @media only screen and (min-width: 550px ) {
 	#time-and-date {
-	margin: 50px 15% 0;
-	width: 70%;
-}
-}
-@media only screen and (min-width: 700px ) {
-	#time-and-date {
 	margin: 50px 20% 0;
 	width: 60%;
 }
 }
-@media only screen and (min-width: 850px ) {
+@media only screen and (min-width: 700px ) {
 	#time-and-date {
 	margin: 50px 25% 0;
 	width: 50%;
 }
 }
-@media only screen and (min-width: 1000px ) {
+@media only screen and (min-width: 850px ) {
 	#time-and-date {
 	margin: 50px 30% 0;
 	width: 40%;
 }
 }
+@media only screen and (min-width: 1000px ) {
+	#time-and-date {
+	margin: 50px 33% 0;
+	width: 34%;
+}
+}
 @media only screen and (min-width: 1150px ) {
+	h1 {
+		font-size: 35px;
+	}
+	#time-and-date {
+		font-size: 30px;
+	}
 @keyframes bounce {
 	0% { transform: translate3d(-275px, 0, 0);
 	}
@@ -217,18 +223,27 @@ h1 {
 	}
 }
 }
+@media only screen and (min-width: 1300px ) and (orientation: landscape) {
+	#time-and-date {
+	margin: 50px 35% 0;
+	width: 30%;
+	}
+}
 @media only screen and (min-width: 1400px ) and (orientation: landscape) {
 	#time-and-date {
-	width: 33%;
+	margin: 50px 36% 0;
+	width: 28%;
 	}
 }
 @media only screen and (min-width: 1650px ) and (orientation: landscape) {
 	#time-and-date {
-	width: 28%;
+	margin: 50px 38% 0;
+	width: 24%;
 	}
 }
 @media only screen and (min-width: 2000px ) and (orientation: landscape) {
 	#time-and-date {
-	width: 23%;
+	margin: 50px 39% 0;
+	width: 22%;
 	}
 }
